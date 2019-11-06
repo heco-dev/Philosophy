@@ -41,3 +41,13 @@
   - Do we need to notify
 - Direct DOM manipulation
 - Design Specs?
+
+## Standards
+- Do NOT:
+  - test private methods directly
+
+---
+
+- Do:
+  - Return from functions, try not to have side-effects
+  - Prefer built-in Array Iteration methods (map, filter, forEach)... prefer map over forEach
