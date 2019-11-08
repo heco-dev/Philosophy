@@ -37,6 +37,7 @@
 - Error handling
 - Promises vs Observables vs async/await
 - Code formatting – (e.g. Prettier)
+- TsLint rules
 - Editing another author’s code
   - Do we need to notify
 - Direct DOM manipulation
@@ -44,10 +45,10 @@
 
 ## Standards
 - Do NOT:
-  - test private methods directly
+  - [Don't test private methods directly](#dont-1)
 
 ---
 
 - Do:
-  - Return from functions, try not to have side-effects
-  - Prefer built-in Array Iteration methods (map, filter, forEach)... prefer map over forEach
+  - [Return from functions, try not to have side-effects](#do-1)
+  - [Prefer built-in Array Iteration methods (map, filter, forEach)](#do-2)
