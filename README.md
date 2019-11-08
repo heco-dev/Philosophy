@@ -45,7 +45,7 @@
 
 ## Standards
 - Do NOT:
-  - [Don't test private methods directly](#dont-1)
+  - #### Don't test private methods directly
 
 ---
 
