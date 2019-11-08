@@ -50,5 +50,5 @@
 ---
 
 - Do:
-  - [Return from functions, try not to have side-effects](#do-1)
-  - [Prefer built-in Array Iteration methods (map, filter, forEach)](#do-2)
+  - #### Return from functions, try not to have side-effects
+  - #### Prefer built-in Array Iteration methods (map, filter, forEach)
