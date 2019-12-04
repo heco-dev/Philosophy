@@ -46,12 +46,12 @@
 - method order... alphabetically or by order of use?
 
 ## Standards
-- Do NOT:
+### Do NOT:
   1. #### Don't test private methods directly
 
 ---
 
-- Do:
+### Do:
   1. #### Return from functions, try not to have side-effects
   2. #### Prefer built-in Array Iteration methods (map, filter, forEach)
   3. #### Test the component template, especially when there is not much to test in the class controller
