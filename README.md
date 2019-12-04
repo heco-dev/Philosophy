@@ -42,13 +42,19 @@
   - Do we need to notify
 - Direct DOM manipulation
 - Design Specs?
+- prefer changeDetection: ChangeDetectionStrategy.OnPush
+- method order... alphabetically or by order of use?
 
 ## Standards
 - Do NOT:
-  - #### Don't test private methods directly
+  1. #### Don't test private methods directly
 
 ---
 
 - Do:
-  - #### Return from functions, try not to have side-effects
-  - #### Prefer built-in Array Iteration methods (map, filter, forEach)
+  1. #### Return from functions, try not to have side-effects
+  2. #### Prefer built-in Array Iteration methods (map, filter, forEach)
+  3. #### Test the component template, especially when there is not much to test in the class controller
+  4. #### Try to make presentation components (minimize code in the class controller)
+  5. #### Injected services should be private and readonly then make public internal methods to expose them when needed
+  6. #### Method order should be: Angular's public lifecycle methods first, then our public methods then our private methods
