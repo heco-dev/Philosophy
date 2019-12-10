@@ -57,4 +57,6 @@
   3. #### Test the component template, especially when there is not much to test in the class controller
   4. #### Try to make presentation components (minimize code in the class controller)
   5. #### Injected services should be private and readonly then make public internal methods to expose them when needed
-  6. #### Method order should be: Angular's public lifecycle methods first, then our public methods then our private methods
+  6. #### Class member order should be: public then private
+  7. #### Class method order should be: Angular's public lifecycle methods first, after that we have not decided
+
