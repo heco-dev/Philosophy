@@ -40,14 +40,13 @@
 - TsLint rules
 - Editing another author’s code
   - Do we need to notify
-- Direct DOM manipulation
 - Design Specs?
-- prefer changeDetection: ChangeDetectionStrategy.OnPush
 - method order... alphabetically or by order of use?
 
 ## Standards
 ### Do NOT:
   1. #### Don't test private methods directly
+  2. #### Don't direct DOM manipulation when Angular provides service/method for it
 
 ---
 
@@ -59,4 +58,5 @@
   5. #### Injected services should be private and readonly then make public internal methods to expose them when needed
   6. #### Class member order should be: public then private
   7. #### Class method order should be: Angular's public lifecycle methods first, after that we have not decided
+  8. #### Prefer ChangeDetectionStrategy.OnPush for components (especially brand new components)
 
