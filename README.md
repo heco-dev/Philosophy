@@ -44,13 +44,14 @@
 - method order... alphabetically or by order of use?
 
 ## Standards
-### Do NOT:
+### Things to avoid:
   1. #### Don't test private methods directly
-  2. #### Don't direct DOM manipulation when Angular provides service/method for it
+  2. #### Don't do direct DOM manipulation when Angular provides service/method for it
+  3. #### Don't use ChangeDetectionStrategy.Default for components (especially brand new components), use OnPush
 
 ---
 
-### Do:
+### Things to prefer:
   1. #### Return from functions, try not to have side-effects
   2. #### Prefer built-in Array Iteration methods (map, filter, forEach)
   3. #### Test the component template, especially when there is not much to test in the class controller
@@ -58,5 +59,5 @@
   5. #### Injected services should be private and readonly then make public internal methods to expose them when needed
   6. #### Class member order should be: public then private
   7. #### Class method order should be: Angular's public lifecycle methods first, after that we have not decided
-  8. #### Prefer ChangeDetectionStrategy.OnPush for components (especially brand new components)
+  8. #### CSS class names should be in kebab-case and element ids should be in PascalCase
 
